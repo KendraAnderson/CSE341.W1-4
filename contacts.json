@@ -1,0 +1,30 @@
+{
+    "contact1": {
+        "firstName": "Britta",
+        "lastName": "Ellis",
+        "email": "brittaLovesMath@4j.edu",
+        "favoriteColor": "seafoam",
+        "birthday": "03/23/1981"
+    },
+    "contact2": {
+        "firstName": "Jane",
+        "lastName": "Anderson",
+        "email": "janeEmris@gmail.com",
+        "favoriteColor": "magenta",
+        "birthday": "01/17/2013"
+    },
+    "contact3": {
+        "firstName": "Abe",
+        "lastName": "Hudson",
+        "email": "abrahamsapian@hotmail.com",
+        "favoriteColor": "black",
+        "birthday": "12/07/1983"
+    },
+    "contact4": {
+        "firstName": "Miriam",
+        "lastName": "LeMaistre",
+        "email": "miriamJoan@gmail.com",
+        "favoriteColor": "orange",
+        "birthday": "11/17/1986"
+    }
+}

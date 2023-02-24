@@ -7,7 +7,7 @@ const getData = async(req, res, next) => {
         .db()
         .collection('contacts')
         .find();
-    result.toArray().then((lists) => {
+        result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists);
     });
