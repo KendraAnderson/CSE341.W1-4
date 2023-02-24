@@ -1,11 +1,14 @@
 //Define constants
 const routes = require('express').Router();
-const myController = require('../controllers');
+const myController = require('../controllers/contacts');
 
 //Define route for name function
-routes.get('/', myController.nameFunction);
+//routes.get('/', myController.nameFunction);
 
-//Define route for another function
-//routes.get('/another', myController.anotherFunction);
+//Define route for contacts function
+routes.get('/', myController.getData);
+
+//Define route for one contact function
+routes.get('/', myController.getOne);
 
 module.exports = routes;
