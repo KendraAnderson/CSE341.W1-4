@@ -5,7 +5,7 @@ const getData = async(req, res, next) => {
     const result = await mongodb
         .getDb()
         .db()
-        .collection('contacts')
+        .collection('Contacts')
         .find();
         result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
@@ -18,8 +18,8 @@ const getOne = async(req, res, next) => {
     const result = await mongodb
         .getDb()
         .db()
-        .collection('contacts')
-        .find({ _id: userId });
+        .collection('Contacts')
+        .find({ _id: userNum });
     result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists[0]);
