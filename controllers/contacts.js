@@ -29,6 +29,6 @@ const getOne = async(req, res, next) => {
 };
 
 //Define a function to post one contact to contacts list
-const addContact = 
+//const addContact = 
 
-module.exports = { getData, getOne, addContact }
+module.exports = { getData, getOne, /*addContact*/ }
