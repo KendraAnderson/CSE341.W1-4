@@ -1,6 +1,7 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
+//Define a function to get all contacts
 const getData = async(req, res, next) => {
     const result = await mongodb
         .getDb()
@@ -13,6 +14,7 @@ const getData = async(req, res, next) => {
     });
 };
 
+//Define a function to get one contact by id
 const getOne = async(req, res, next) => {
     const userNum = new ObjectId(req.params.id);
     const result = await mongodb
@@ -26,4 +28,7 @@ const getOne = async(req, res, next) => {
     });
 };
 
-module.exports = { getData, getOne }
+//Define a function to post one contact to contacts list
+const addContact = 
+
+module.exports = { getData, getOne, addContact }
