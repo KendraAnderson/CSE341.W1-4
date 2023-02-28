@@ -12,21 +12,49 @@ content-type: application/json
     "firstName": "Julie",
     "lastName": "Kennedy",
     "email": "theJules@yahoo.com",
-    "favoriteColor": "sunshine",
+    "favoriteColor": "lime",
     "birthday": "12/03/1988"
 }
 
 ### Put new data into existing contact
-PUT http://localhost:3000/63f90c6fcb11d579fbc4a65b HTTP/1.1
+PUT http://localhost:3000/63fd723ef6000b571b419b58 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Britta",
-    "lastName": "Horsley",
-    "email": "brittaLovesMath@4j.edu",
-    "favoriteColor": "mellow yellow",
-    "birthday": "03/23/1981"
+    
+"firstName": "Britta",
+"lastName": "Horsley",
+"email":"britta@byui.edu",
+"favoriteColor": "cyan",
+"birthday": "03/23/1981"
 }
 
 ### Delete a contact
-DELETE http://localhost:3000/63f90c6fcb11d579fbc4a65b HTTP/1.1
+DELETE http://localhost:3000/63fd723ef6000b571b419b58 HTTP/1.1
+
+### Render post
+POST https://lesson-3-new.onrender.com/contacts
+content-type: application/json
+
+{
+    "firstName": "Julie",
+    "lastName": "Kennedy",
+    "email": "theJules@yahoo.com",
+    "favoriteColor": "green",
+    "birthday": "12/03/1988"
+}
+
+### Render put
+PUT https://lesson-3-new.onrender.com/63fd7353a8d930dffa30b985 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Julie",
+    "lastName": "Kennedy",
+    "email": "theJules@yahoo.com",
+    "favoriteColor": "charcoal",
+    "birthday": "12/03/1988"
+}
+
+### Render delete
+DELETE https://lesson-3-new.onrender.com/63fd7353a8d930dffa30b985 HTTP/1.1
