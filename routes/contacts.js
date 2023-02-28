@@ -10,7 +10,7 @@ routes.get('/contacts', myController.getData);
 routes.get('/:id', myController.getOne);
 
 //Define a route for posting to contacts
-routes.post('/', myController.addContact);
+routes.post('/contacts', myController.addContact);
 
 //Define route for changing a contact
 routes.put('/:id', myController.updateContact);

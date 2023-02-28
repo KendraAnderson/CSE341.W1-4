@@ -29,7 +29,7 @@ const addContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   };
-  const response = await mongodb.getDb().db().collection('contacts').insertOne(newContact);
+  const response = await mongodb.getDb().db().collection('Contacts').insertOne(newContact);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
@@ -50,7 +50,7 @@ const updateContact = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db()
-    .collection('contacts')
+    .collection('Contacts')
     .replaceOne({ _id: userId }, contact);
   console.log(response);
   if (response.modifiedCount > 0) {
@@ -63,10 +63,10 @@ const updateContact = async (req, res) => {
 //Define a function to delete a contact by id
 const deleteContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  const response = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
+  const response = await mongodb.getDb().db().collection('Contacts').deleteOne({ _id: userId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
-    res.status(204).send();
+    res.status(200).send();
   } else {
     res.status(500).json(response.error || ' Contact not deleted. Try again.');
   }
