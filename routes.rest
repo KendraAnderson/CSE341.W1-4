@@ -1,4 +1,31 @@
+### Get all contacts
 GET http://localhost:3000/contacts HTTP/1.1
 
-###
-GET http://localhost:3000/63f90c6fcb11d579fbc4a65b
+### Get one contact
+GET http://localhost:3000/contacts/63f90c6fcb11d579fbc4a65b HTTP/1.1
+<!--
+### Post a new contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Julie",
+    "lastName": "Kennedy",
+    "email": "theJules@yahoo.com",
+    "favoriteColor": "sunshine",
+    "birthday": "12/03/1988"
+}
+
+### Put new data into existing contact
+PUT http://localhost:3000/contacts/63f90c6fcb11d579fbc4a65b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Britta",
+    "lastName": "Horsley",
+    "email": "brittaLovesMath@4j.edu",
+    "favoriteColor": "mellow yellow",
+    "birthday": "03/23/1981"
+}
+
+### Delete a contact-->
