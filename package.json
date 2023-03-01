@@ -1,5 +1,5 @@
 {
-  "name": "w1-ka-personal",
+  "name": "w4-ka-personal",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,7 +8,9 @@
     "start": "nodemon server.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" --config ./.prettierrc"
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" --config ./.prettierrc",
+    "swagger-autogen": "node ./swagger.js",
+    "swagger": "node ./swagger.js"
   },
   "author": "kendra anderson",
   "license": "ISC",
@@ -17,7 +19,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^5.1.0",
-    "mongoose": "^6.10.0"
+    "swagger-ui-express": "^4.6.2"
   },
   "devDependencies": {
     "eslint": "^8.35.0",
@@ -25,6 +27,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "nodemon": "^2.0.20",
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "swagger-autogen": "^2.23.1"
   }
 }
