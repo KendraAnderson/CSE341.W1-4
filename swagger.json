@@ -5,7 +5,7 @@
     "description": "Contacts",
     "version": "1.0.0"
   },
-  "host": "//lesson-4-hju1.onrender.com",
+  "host": "lesson-4-hju1.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
